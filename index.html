@@ -13,159 +13,151 @@
     />
     <!-- link css -->
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/login.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
     <title>Edify | Best Learning Platform</title>
   </head>
   <body>
-    <div id="position">
-      <nav id="navbar">
-        <div class="container">
-          <!-- navLogo -->
-          <input type="checkbox" name="check" id="check" />
-          <label for="check" class="checkBtn"
-            ><i class="fas fa-bars"></i
-          ></label>
-          <label class="logo"><a href="#slideshow">Edify</a></label>
+    <nav id="navbar" class="navTransparent">
+      <div class="container">
+        <!-- navLogo -->
+        <input type="checkbox" name="check" id="check" />
+        <label for="check" class="checkBtn"><i class="fas fa-bars"></i></label>
+        <label class="logo"><a href="#slideshow">Edify</a></label>
 
-          <!-- navLinks -->
-          <ul class="navLinks">
-            <li class="links"><a href="#home">Home</a></li>
-            <li class="links"><a href="#services">Services</a></li>
-            <li class="links"><a href="#about">About</a></li>
-            <li class="links"><a href="#contact">Contact</a></li>
-          </ul>
+        <!-- navLinks -->
+        <ul class="navLinks">
+          <li class="links"><a href="#home">Home</a></li>
+          <li class="links"><a href="#services">Services</a></li>
+          <li class="links"><a href="#about">About</a></li>
+          <li class="links"><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Auto SlideShow -->
+
+    <section id="slideshow">
+      <div class="slideContent">
+        <div class="darkOverlay">
+          <div class="container slideInfo">
+            <h1>Welcome To Edify!</h1>
+            <p>
+              Edify is not just an app or a web app, edify is a Solution. Edify
+              is the solution schools NEED.
+            </p>
+            <button type="submit" id="openLogin" class="btn-large">
+              get started
+            </button>
+          </div>
+          <div class="skewed"></div>
         </div>
-      </nav>
+      </div>
+    </section>
+    <!-- login logout -->
 
-      <!-- Auto SlideShow -->
-
-      <section id="slideshow">
-        <div class="slideContent">
-          <div class="darkOverlay">
-            <div class="container slideInfo">
-              <h1>Welcome To Edify!</h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Numquam et eveniet a dolorem mollitia perferendis?
-              </p>
-              <button type="submit" id="openLogin" class="btn-large">
-                get started
-              </button>
+    <div id="loginContent">
+      <div class="container" id="login">
+        <div class="form-container sign-up-container">
+          <form action="">
+            <h1>Create Account</h1>
+            <div class="social-container">
+              <a href="#" class="social"
+                ><i class="fab fa-facebook-f fa-2x"></i
+              ></a>
+              <a href="#" class="social"><i class="fab fa-google fa-2x"></i></a>
+              <a href="#" class="social"
+                ><i class="fab fa-linkedin-in fa-2x"></i
+              ></a>
             </div>
-          </div>
+            <span>or Fill the form for Registration</span>
+            <input type="text" name="name" placeholder="Name" />
+            <input type="email" name="email" placeholder="Email" />
+            <input type="password" name="password" placeholder="Password" />
+            <button type="submit">Sign Up</button>
+          </form>
         </div>
-      </section>
+        <div class="form-container sign-in-container">
+          <form action="#">
+            <h1>Sign In</h1>
+            <div class="social-container">
+              <a href="#" class="social"
+                ><i class="fab fa-facebook-f fa-2x"></i
+              ></a>
+              <a href="#" class="social"><i class="fab fa-google fa-2x"></i></a>
+              <a href="#" class="social"
+                ><i class="fab fa-linkedin-in fa-2x"></i
+              ></a>
+            </div>
+            <span>or use your account</span>
+            <input type="email" name="email" placeholder="Email" />
+            <input type="password" name="password" placeholder="Password" />
+            <a href="#">Forgot Your Password?</a>
 
-      <!-- login logout -->
-
-      <div id="loginContent">
-        <div class="container" id="login">
-          <div class="form-container sign-up-container">
-            <form action="">
-              <h1>Create Account</h1>
-              <div class="social-container">
-                <a href="#" class="social"
-                  ><i class="fab fa-facebook-f fa-2x"></i
-                ></a>
-                <a href="#" class="social"
-                  ><i class="fab fa-google fa-2x"></i
-                ></a>
-                <a href="#" class="social"
-                  ><i class="fab fa-linkedin-in fa-2x"></i
-                ></a>
-              </div>
-              <span>or Fill the form for Registration</span>
-              <input type="text" name="name" placeholder="Name" />
-              <input type="email" name="email" placeholder="Email" />
-              <input type="password" name="password" placeholder="Password" />
-              <button type="submit">Sign Up</button>
-            </form>
-          </div>
-          <div class="form-container sign-in-container">
-            <form action="#">
-              <h1>Sign In</h1>
-              <div class="social-container">
-                <a href="#" class="social"
-                  ><i class="fab fa-facebook-f fa-2x"></i
-                ></a>
-                <a href="#" class="social"
-                  ><i class="fab fa-google fa-2x"></i
-                ></a>
-                <a href="#" class="social"
-                  ><i class="fab fa-linkedin-in fa-2x"></i
-                ></a>
-              </div>
-              <span>or use your account</span>
-              <input type="email" name="email" placeholder="Email" />
-              <input type="password" name="password" placeholder="Password" />
-              <a href="#">Forgot Your Password</a>
-
-              <button>Sign In</button>
-            </form>
-          </div>
-          <div class="overlay-container">
-            <div class="overlay">
-              <div class="overlay-panel overlay-left">
-                <h1>Welcome Back!</h1>
-                <p>
-                  To keep connected with us please login with your personal info
-                </p>
-                <button class="ghost" id="signIn">Sign In</button>
-              </div>
-              <div class="overlay-panel overlay-right">
-                <h1>Hello, Friend!</h1>
-                <p>Enter your details and start journey with us</p>
-                <button class="ghost" id="signUp">Sign Up</button>
-              </div>
+            <button>Sign In</button>
+          </form>
+        </div>
+        <div class="overlay-container">
+          <div class="overlay">
+            <div class="overlay-panel overlay-left">
+              <h1>Welcome Back!</h1>
+              <p>
+                To keep connected with us please login
+              </p>
+              <button class="ghost" id="signIn">Sign In</button>
+            </div>
+            <div class="overlay-panel overlay-right">
+              <h1>Hello, There!</h1>
+              <p>Enter your details and start</p>
+              <button class="ghost" id="signUp">Sign Up</button>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- home -->
+    <!-- home -->
 
-      <section id="home">
-        <div class="homeBg">
-          <div class="homeContent">
-            <div class="container">
-              <h1>What Edify Actually Is?</h1>
-              <p>
-                Times have changed and with changing times, the sphere of school
-                education still remains stuck in the past. With these changing
-                times, have we at all, changed? Keeping up with the world and
-                taking into account the concerns of parents and teachers alike,
-                Edify helps you take the next step forward. The integration of
-                our services not only makes our product unique but also gives us
-                an edge over others. So what exactly do we do? Edify provides
-                services that enhance the schooling experience for the students
-                by providing or improving the online services through mobile
-                application and website which are essential for the overall
-                development of the child. We provide mechanisms to parents and
-                teachers which help keep a regular check on the ward’s academic
-                and non-academic progress.
-              </p>
-            </div>
+    <section id="home">
+      <div class="homeBg">
+        <div class="homeContent">
+          <div class="container">
+            <h1>What Edify Actually Is?</h1>
+            <p>
+              Times have changed and with changing times, the sphere of school
+              education still remains stuck in the past. With these changing
+              times, have we at all, changed? Keeping up with the world and
+              taking into account the concerns of parents and teachers alike,
+              Edify helps you take the next step forward. The integration of our
+              services not only makes our product unique but also gives us an
+              edge over others. So what exactly do we do? Edify provides
+              services that enhance the schooling experience for the students by
+              providing or improving the online services through mobile
+              application and website which are essential for the overall
+              development of the child. We provide mechanisms to parents and
+              teachers which help keep a regular check on the ward’s academic
+              and non-academic progress.
+            </p>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
 
     <!-- services -->
 
     <section id="services">
+      <h1>Our Services</h1>
       <div class="container">
         <!-- service card -->
 
         <div class="card">
-          <div class="face face1">
-            <div class="faceContent">
-              <i class="fas fa-id-card-alt fa-8x"></i>
-              <h3>Virtual Attendence</h3>
-            </div>
+          <div class="front">
+            <div class="icon"><i class="fas fa-id-card-alt"></i></div>
+            <h3>Virtual Attendence</h3>
           </div>
-          <div class="face face2">
-            <div class="faceContent">
-              <p>
+          <div class="back">
+            <div class="back-content">
+              <p class="para">
                 There are constant insecurities and concerns the parents have to
                 deal with when their child is away from them, at school. The
                 Edify team understands these concerns and provides methods to
@@ -173,26 +165,20 @@
                 the students movement in and out of their school and buses.
                 Edify will help take virtual attendance of the students in the
                 School and also in the bus, recording each entry and exit
-                movement of theirs. Students’ school issued Identity cards will
-                act as the medium to mark the virtual attendance. Parents will
-                be notified about the movement of their child on the Edify app
-                enabling safety and security of the students. This ensures that
-                parents have nothing to worry about, and can send their ward to
-                school more freely than ever before.
+                movement of theirs.
               </p>
             </div>
           </div>
         </div>
+
         <div class="card">
-          <div class="face face1">
-            <div class="faceContent">
-              <i class="fas fa-map-marker-alt fa-8x"></i>
-              <h3>Live Location</h3>
-            </div>
+          <div class="front">
+            <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+            <h3>Live Location</h3>
           </div>
-          <div class="face face2">
-            <div class="faceContent">
-              <p>
+          <div class="back">
+            <div class="back-content">
+              <p class="para">
                 Parents who have their children, going to school and coming
                 home, from the school bus, face a completely different set of
                 concerns. Edify will provide the Live tracking of the school bus
@@ -201,93 +187,113 @@
                 enabling edify app to project the live location of the bus. The
                 app will indicate the estimated time of arrival of the bus to
                 the pick up or the drop location, so that they do not have to
-                wait unnecessarily at bus stops. This amps up the safety
-                measures manifolds, as the bus can be completely monitored for
-                its speed, route, estimated time of arrival etc.
+                wait unnecessarily at bus stops.
               </p>
             </div>
           </div>
         </div>
+
         <div class="card">
-          <div class="face face1">
-            <div class="faceContent">
-              <i class="fas fa-id-card-alt"></i>
-              <h3>Virtual Attendence</h3>
-            </div>
+          <div class="front">
+            <div class="icon"><i class="fas fa-poll-h"></i></div>
+            <h3>E-report Card</h3>
           </div>
-          <div class="face face2">
-            <div class="faceContent">
-              <p>
-                There are constant insecurities and concerns the parents have to
-                deal with when their child is away from them, at school. The
-                Edify team understands these concerns and provides methods to
-                solve them. We have come up with a distinctive idea of recording
-                the students movement in and out of their school and buses.
-                Edify will help take virtual attendance of the students in the
-                School and also in the bus, recording each entry and exit
-                movement of theirs. Students’ school issued Identity cards will
-                act as the medium to mark the virtual attendance. Parents will
-                be notified about the movement of their child on the Edify app
-                enabling safety and security of the students. This ensures that
-                parents have nothing to worry about, and can send their ward to
-                school more freely than ever before.
+          <div class="back">
+            <div class="back-content">
+              <p class="para">
+                The parents and the teachers’ major interaction is through the
+                students alone. We plan to eliminate this barrier which may
+                cause miscommunication and other problems, by linking the
+                teachers and parents directly, through an app. Edify shall
+                provide parents a constant view at the student’s academic
+                progress. It shall provide the student with constant updates on
+                their academics with E-Report card, and assignments. This will
+                help the school in becoming paperless by sending assignments and
+                report cards online via the Edify app.
               </p>
             </div>
           </div>
         </div>
+
         <div class="card">
-          <div class="face face1">
-            <div class="faceContent">
-              <i class="fas fa-id-card-alt"></i>
-              <h3>Virtual Attendence</h3>
-            </div>
+          <div class="front">
+            <div class="icon"><i class="fas fa-bell"></i></div>
+            <h3>Notification and Messeges</h3>
           </div>
-          <div class="face face2">
-            <div class="faceContent">
-              <p>
-                There are constant insecurities and concerns the parents have to
-                deal with when their child is away from them, at school. The
-                Edify team understands these concerns and provides methods to
-                solve them. We have come up with a distinctive idea of recording
-                the students movement in and out of their school and buses.
-                Edify will help take virtual attendance of the students in the
-                School and also in the bus, recording each entry and exit
-                movement of theirs. Students’ school issued Identity cards will
-                act as the medium to mark the virtual attendance. Parents will
-                be notified about the movement of their child on the Edify app
-                enabling safety and security of the students. This ensures that
-                parents have nothing to worry about, and can send their ward to
-                school more freely than ever before.
+          <div class="back">
+            <div class="back-content">
+              <p class="para">
+                A notification and a real time message shall be sent to the
+                parents whenever there is an update in the ward’s activity. This
+                will make school and the parents feel less worried about the
+                child’s activity and whereabouts. The great thing is, this
+                doesn’t require you to have a smartphone and an internet
+                connection to keep your child safe.
               </p>
             </div>
           </div>
         </div>
+
         <div class="card">
-          <div class="face face1">
-            <div class="faceContent">
-              <i class="fas fa-id-card-alt"></i>
-              <h3>Virtual Attendence</h3>
-            </div>
+          <div class="front">
+            <div class="icon"><i class="fas fa-user-friends"></i></div>
+            <h3>Parent - School Interaction</h3>
           </div>
-          <div class="face face2">
-            <div class="faceContent">
-              <p>
-                There are constant insecurities and concerns the parents have to
-                deal with when their child is away from them, at school. The
-                Edify team understands these concerns and provides methods to
-                solve them. We have come up with a distinctive idea of recording
-                the students movement in and out of their school and buses.
-                Edify will help take virtual attendance of the students in the
-                School and also in the bus, recording each entry and exit
-                movement of theirs. Students’ school issued Identity cards will
-                act as the medium to mark the virtual attendance. Parents will
-                be notified about the movement of their child on the Edify app
-                enabling safety and security of the students. This ensures that
-                parents have nothing to worry about, and can send their ward to
-                school more freely than ever before.
+          <div class="back">
+            <div class="back-content">
+              <p class="para">
+                Parent school interaction has suffered for a very long time. We
+                plan to bring an to this huge distance between the two. The
+                Edify app and website will be used as mediums for parents to
+                convey their feedback, complaints and suggestions to the school
+                as well as teachers. This way the school would be able to
+                improve upon where it might be lacking, and would be able to
+                understand the concern of the parents in a better and more
+                wholesome way.
               </p>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+
+    <section id="about">
+      <h1>About Us</h1>
+      <div class="container overlay">
+        <div class="card ourVision">
+          <h1>Our Vision</h1>
+          <p>
+            The integration of our services not only makes our product and
+            service unique but also gives us an edge over others. We believe
+            that our services enhance the schooling for the students by
+            providing or improving the online services through mobile
+            application and website required for overall development and ensures
+            the parents that their ward is safe and can keep a regular check on
+            their academic as well as non-academic progress. With constant
+            upgradation of new features in our services, we offer our services
+            at a minimal cost.
+          </p>
+        </div>
+        <div class="card ourMission">
+          <h1>Our Mission</h1>
+          <p>
+            Safe and secure transportation of the students is what we aim for in
+            the transport department of edify. We help parents avoid the long
+            unnecessary wait at bus stops by giving them an alert on their
+            mobile phones stating the approximate time of arrival of the bus at
+            their bus stop.
+          </p>
+        </div>
+        <div class="card ourGoal">
+          <h1>Our Goal</h1>
+          <p>
+            Edify aims at upgrading the schooling in a secure and updated
+            environment through a user friendly mobile application and website
+            which aim to facilitate parents , school and students by improving
+            the school life experience
+          </p>
         </div>
       </div>
     </section>
