@@ -31,7 +31,7 @@
   height: 100%;
   width: 100%;
   overflow: auto;
-  background-color: rgba(24, 40, 207, 0.6);
+  background-color: rgba(26, 32, 99, 0.7);
 }
 
 #login {
@@ -135,9 +135,9 @@
 }
 
 #login .overlay {
-  background: #1828cf;
-  background: -webkit-linear-gradient(45deg, #ee1271, #1828cf);
-  background: linear-gradient(45deg, #ee1271, #1828cf);
+  background: var(--prime);
+  background: -webkit-linear-gradient(45deg, var(--prime-light), var(--prime));
+  background: linear-gradient(45deg, var(--prime-light), var(--prime));
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;

@@ -23,7 +23,7 @@ body {
 
 /* variables */
 :root {
-  --prime: #1a2063;
+  --prime: rgb(26, 32, 99);
   --secondary: rgb(238, 17, 113);
   --prime-light: #5c68f0;
   --time: 0.5s;
@@ -77,18 +77,26 @@ button:focus {
   position: fixed;
   width: 100%;
   background: #fff;
-  /* box-shadow: 0 1px 10px var(--prime); */
+  box-shadow: 0 1px 10px #c4c4c4;
   height: 65px;
   z-index: 1;
   transition: all var(--time);
 }
 
-#navbar.navColored a {
+#navbar.navColored a,
+#navbar.navColored .checkBtn,
+#navbar.navColored .logo svg {
+  fill: var(--prime);
   color: var(--prime);
 }
 
 #navbar.navColored .checkBtn {
   color: var(--prime);
+}
+
+#navbar .logo {
+  /* height: inherit; */
+  width: 100px;
 }
 
 #navbar a {
@@ -115,13 +123,6 @@ button:focus {
   align-items: center;
   height: 100%;
 }
-
-#navbar .logo a {
-  font-family: 'poppins', sans-serif;
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-
 #navbar .navLinks {
   display: flex;
 }
@@ -281,9 +282,11 @@ button:focus {
   height: 100%;
   width: 100%;
 }
+
 #services .container {
   padding-bottom: 2rem;
 }
+
 #services h1 {
   text-align: center;
   font-size: 3rem;
@@ -321,6 +324,7 @@ button:focus {
   color: #fff;
   border-radius: 50px;
   transition: var(--time) ease-in-out;
+  border: 10px solid var(--secondary);
 }
 
 #services .card .front i {
@@ -409,6 +413,7 @@ button:focus {
 
 #about .card h1 {
   font-size: 2rem;
+  border-top: 10px solid var(--secondary);
 }
 
 #about .card p {

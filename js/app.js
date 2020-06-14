@@ -50,6 +50,9 @@ edify.addEventListener('click', () => {
 // nav cange on scroll listener
 
 window.addEventListener('scroll', navChange);
+window.addEventListener('scroll', () => {
+  check.checked = false;
+});
 
 // check.addEventListener('click', checkClick);
 
@@ -72,9 +75,9 @@ window.addEventListener('click', loginClose);
 
 // event listeners for slide in animation
 
-window.addEventListener('load', run);
-window.addEventListener('resize', run);
-window.addEventListener('scroll', run);
+// window.addEventListener('load', run);
+// window.addEventListener('resize', run);
+// window.addEventListener('scroll', run);
 
 // skew scroll effect
 window.addEventListener('scroll', skewEffect);

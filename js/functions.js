@@ -22,14 +22,14 @@ const isInViewport = (el) => {
   );
 };
 
-const run = () => {
-  // DataTransferItemList.forEach((item) => {
-  //   item.classList.add('show');
-  // });
-  items.forEach((item) => {
-    item.classList.add('show');
-  });
-};
+// const run = () => {
+//   DataTransferItemList.forEach((item) => {
+//     item.classList.add('show');
+//   });
+//   items.forEach((item) => {
+//     item.classList.add('show');
+//   });
+// };
 
 // skew scroll effect
 
