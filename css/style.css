@@ -148,6 +148,7 @@ button:focus {
   animation: animatePic 20s infinite;
   transform: translateY(-100%);
   transition: all var(--time);
+  overflow: hidden;
 }
 
 #slideshow .slideContent {
