@@ -70,7 +70,8 @@
   text-align: center;
 }
 
-#login form input {
+#login form input,
+#login form textarea {
   background-color: #eee;
   border: none;
   padding: 10px 15px;
@@ -79,7 +80,12 @@
   border-radius: 50px;
 }
 
-#login form input:focus {
+#login form textarea {
+  border-radius: 5px;
+}
+
+#login form input:focus,
+#login form textarea:focus {
   border: 1px solid var(--prime);
   outline: none;
 }

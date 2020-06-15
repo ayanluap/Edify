@@ -1,9 +1,14 @@
+window.addEventListener('DOMContentLoaded', () => {
+  window.location.assign('#slideshow');
+});
+
 // variables
 
 // edify
 const edify = document.querySelector('#navbar .logo a');
 // check box nav
 const check = document.getElementById('check');
+const contact = document.getElementById('contact');
 
 // navbar
 const navbar = document.getElementById('navbar');
@@ -31,7 +36,7 @@ const homeContent = document.querySelector('#home .homeContent');
 
 // services item
 
-const items = document.querySelectorAll('#services .card');
+const cards = document.querySelectorAll('#services .card');
 
 // EVENT LISTENERS
 
@@ -66,6 +71,11 @@ signInButton.addEventListener('click', () => {
   login.classList.remove('right-panel-active');
 });
 
+contact.addEventListener('click', () => {
+  loginOpen();
+  login.classList.add('right-panel-active');
+});
+
 openLogin.addEventListener('click', loginOpen);
 
 // listen for outside click of login form
@@ -75,9 +85,9 @@ window.addEventListener('click', loginClose);
 
 // event listeners for slide in animation
 
-// window.addEventListener('load', run);
-// window.addEventListener('resize', run);
-// window.addEventListener('scroll', run);
+window.addEventListener('load', run);
+window.addEventListener('resize', run);
+window.addEventListener('scroll', run);
 
 // skew scroll effect
 window.addEventListener('scroll', skewEffect);

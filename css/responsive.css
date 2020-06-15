@@ -64,6 +64,12 @@
     align-items: center;
   }
 
+  /* login */
+
+  #login {
+    width: 90%;
+  }
+
   /* home */
 
   #home .homeContent .container {
@@ -86,6 +92,7 @@
   #services .container .card {
     display: flex;
     flex-direction: column;
+    transform: translateX(0);
   }
 
   #services .card:nth-child(odd),

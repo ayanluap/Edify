@@ -1,6 +1,7 @@
 // login form open
 function loginOpen() {
   loginContent.style.display = 'block';
+  login.classList.remove('right-panel-active');
 }
 
 function loginClose(e) {
@@ -22,14 +23,13 @@ const isInViewport = (el) => {
   );
 };
 
-// const run = () => {
-//   DataTransferItemList.forEach((item) => {
-//     item.classList.add('show');
-//   });
-//   items.forEach((item) => {
-//     item.classList.add('show');
-//   });
-// };
+const run = () => {
+  cards.forEach((card) => {
+    if (isInViewport(card)) {
+      card.style.transform = 'translateX(0)';
+    }
+  });
+};
 
 // skew scroll effect
 
