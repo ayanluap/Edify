@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --time: 0.3s;
+}
+
+body {
+  /* font-size: 62.5%; */
+  height: 1000px;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* utility */
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* navbar */
+
+#navbar #check {
+  display: none;
+}
+
+#navbar .container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#navbar .container .checkBtn {
+  z-index: 1;
+  color: #fff;
+}
+
+#navbar .container label {
+  margin: auto 0;
+  cursor: pointer;
+}
+
+#navbar .container i {
+  font-size: 2rem;
+  color: #fff;
+}
+
+#navbar .container .logo {
+  margin: 0 auto;
+  width: 100px;
+}
+
+/* Side Links */
+
+/* #navbar .sideLinks {
+  position: absolute;
+  width: 200px;
+  height: 90vh;
+  top: 65px;
+  left: -100%;
+  padding: 0.1rem 0;
+  overflow: auto;
+  z-index: 1;
+  transition: all var(--time) ease;
+}
+
+#navbar .sideLinks a:last-child {
+  margin-bottom: 2.5rem;
+}
+
+#navbar .container #check:checked ~ .sideLinks {
+  left: 0;
+} */
+
+/* custom ctrl */
+
+#mainContent {
+  position: absolute;
+  top: 65px;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+#mainContent #cards {
+  padding: 2rem;
+}
+
+#mainContent #cards .card {
+  margin-bottom: 2rem;
+}

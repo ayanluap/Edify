@@ -23,6 +23,7 @@ const signInButton = document.getElementById('signIn');
 const login = document.getElementById('login');
 const loginContent = document.getElementById('loginContent');
 const openLogin = document.getElementById('openLogin');
+const mainCtrl = document.getElementById('mainCtrl');
 
 // slideshow
 const slideshow = document.getElementById('slideshow');
@@ -51,15 +52,12 @@ edify.addEventListener('click', () => {
   check.checked = false;
 });
 
-// edify.addEventListener('click', onLoad);
 // nav cange on scroll listener
 
 window.addEventListener('scroll', navChange);
 window.addEventListener('scroll', () => {
   check.checked = false;
 });
-
-// check.addEventListener('click', checkClick);
 
 // login form event listener
 
@@ -78,11 +76,13 @@ contact.addEventListener('click', () => {
 
 openLogin.addEventListener('click', loginOpen);
 
+// login
 // listen for outside click of login form
+
 window.addEventListener('click', loginClose);
+// mainCtrl.addEventListener('submit', toMainCtrl);
 
 // Homepage
-
 // event listeners for slide in animation
 
 window.addEventListener('load', run);

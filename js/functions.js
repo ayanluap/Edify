@@ -49,6 +49,12 @@ function navChange() {
   }
 }
 
+// Transfer to main control
+
+// function toMainCtrl() {
+//   window.location.href = 'mainControl.html';
+// }
+
 // animations on load
 function onLoad() {
   slideshow.style.transform = 'translateY(0)';
