@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     />
     <!-- link css -->
+    <link href="./css/fc.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/customCtrl.css" />
     <title>Edify</title>
@@ -55,9 +56,7 @@
 
         <!-- side links -->
         <ul id="sideLinks" class="list-group list-group-flush sidebar bg-white">
-          <a
-            href="./home.html"
-            class="list-group-item list-group-item-action active"
+          <a href="./home.html" class="list-group-item list-group-item-action"
             >Home</a
           >
           <a href="./home.html" class="list-group-item list-group-item-action"
@@ -69,7 +68,7 @@
           >
           <a
             href="./calender.html"
-            class="list-group-item list-group-item-action"
+            class="list-group-item list-group-item-action active"
             >Calender</a
           >
           <a href="./home.html" class="list-group-item list-group-item-action"
@@ -90,95 +89,7 @@
     </nav>
 
     <section id="mainContent">
-      <!-- Cards -->
-
-      <section id="cards">
-        <div class="row">
-          <div class="col-lg-3 col-md-6 col-sm-12">
-            <div class="card">
-              <div class="card-body">
-                <p>School Details</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-12">
-            <div class="card">
-              <div class="card-body">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error,
-                perferendis culpa. Animi voluptatibus vero nam quod quam
-                nesciunt dicta voluptatem.
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-12">
-            <div class="card">
-              <div class="card-body">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error,
-                perferendis culpa. Animi voluptatibus vero nam quod quam
-                nesciunt dicta voluptatem.
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-12">
-            <div class="card">
-              <div class="card-body">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error,
-                perferendis culpa. Animi voluptatibus vero nam quod quam
-                nesciunt dicta voluptatem.
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- notice and todo -->
-
-      <section id="noticeTodo" class="container">
-        <div class="row">
-          <!-- notices -->
-          <div class="col-lg-8 col-md-6 col-sm-12">
-            <div id="notice" class="card">
-              <h3 class="card-header text-center">Notices</h3>
-              <ul class="card-body list-group list-group-flush"></ul>
-              <div class="card-footer">
-                <form class="d-flex justify-content-between align-items-center">
-                  <div class="form-group">
-                    <label for="newNotice">Upload Notice</label>
-                    <input
-                      type="file"
-                      class="form-control-file"
-                      id="newNotice"
-                    />
-                  </div>
-                  <button type="submit" class="btn btn-primary">Upload</button>
-                </form>
-              </div>
-            </div>
-          </div>
-
-          <!-- todo -->
-          <div class="col-lg-4 col-md-6 col-sm-12">
-            <div id="todo" class="card">
-              <h3 class="card-header text-center">Todo List</h3>
-              <input
-                type="text"
-                name="taskInput"
-                id="taskInput"
-                class="form-control my-3"
-                placeholder="Enter New Task"
-              />
-              <button
-                type="submit"
-                id="addTask"
-                class="btn btn-primary mb-3 mx-3"
-              >
-                Add Task
-              </button>
-              <ul class="card-body list-group list-group-flush"></ul>
-            </div>
-          </div>
-        </div>
-      </section>
+      <div id="calendar"></div>
     </section>
 
     <script
@@ -191,8 +102,9 @@
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/fc.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/homeFunc.js"></script>
+    <script src="./js/calender.js"></script>
     <script src="./js/mainctrl.js"></script>
   </body>
 </html>

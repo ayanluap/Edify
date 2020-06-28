@@ -1,10 +1,10 @@
 // load all event
 
-// loadEventListeners();
+loadEventListeners();
 
 // Event liseners
 
 function loadEventListeners() {
   addTaskBtn.addEventListener('click', addTask);
-  collections.addEventListener('click', removeTask);
+  listGroup.addEventListener('click', removeTask);
 }
