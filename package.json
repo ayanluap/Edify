@@ -1,7 +1,6 @@
 {
   "name": "edify",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/ayanluap/Edify.git"
   },
-  "author": "",
+  "author": "ayan",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ayanluap/Edify/issues"
@@ -24,5 +23,10 @@
     "express-handlebars": "^4.0.4",
     "firebase-admin": "^8.12.1",
     "hbs": "^4.1.1"
-  }
+  },
+  "devDependencies": {},
+  "description": "edify",
+  "keywords": [
+    "no"
+  ]
 }
